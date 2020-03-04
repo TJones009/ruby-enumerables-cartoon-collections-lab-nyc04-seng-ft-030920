@@ -6,7 +6,8 @@ def roll_call_dwarves(gang)
 end
 
 def summon_captain_planet(planeteer_calls)
-  planeteer_calls.map {|call| call.length > 4}
+  planeteer_calls.map do |call|
+    call.capitalize + "!"
 end
 
 
